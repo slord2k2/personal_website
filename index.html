@@ -94,14 +94,14 @@
               <div class="col-lg-6">
                 <ul>
                   <li><i class="icofont-rounded-right"></i>Birthday <strong>06 April 2002</strong></li>
-                  <li><i class="icofont-rounded-right"></i>Website <strong><a href="https://clever-easley-7f9103.netlify.app/">here</a></strong></li>
+                  <li><i class="icofont-rounded-right"></i>Website <strong><a href="https://slord2k2.netlify.app/">here</a></strong></li>
                   <li><i class="icofont-rounded-right"></i>Phone <strong>+91 9465286501</strong></li>
                   <li><i class="icofont-rounded-right"></i>City <strong>Gurgaon,HR</strong></li>
                 </ul>
               </div>
               <div class="col-lg-6">
                 <ul>
-                  <li><i class="icofont-rounded-right"></i>Age: <strong>19</strong></li>
+                  <li><i class="icofont-rounded-right"></i>Age: <strong id="age"></strong></li>
                   <li><i class="icofont-rounded-right"></i>Degree <strong>B.TECH</strong></li>
                   <li><i class="icofont-rounded-right"></i>Email <strong>harshkishor2002@gmail.com</strong></li>
                 </ul>
@@ -385,6 +385,17 @@
 <!-- Template Main JS File -->
 <script src="assets/js/main.js"></script>
 
+<script>
+  // Enter your birthdate in the format "YYYY-MM-DD"
+  var birthdate = "2002-04-06";
+  
+  // Calculate age based on birthdate
+  var ageInMilliseconds = Date.now() - new Date(birthdate).getTime();
+  var ageInYears = new Date(ageInMilliseconds).getUTCFullYear() - 1970;
+  
+  // Update age element in HTML
+  document.getElementById("age").innerText = ageInYears;
+  </script>
 </body>
 
 </html>
