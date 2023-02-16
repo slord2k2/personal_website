@@ -94,8 +94,8 @@
               <div class="col-lg-6">
                 <ul>
                   <li><i class="icofont-rounded-right"></i>Birthday <strong>06 April 2002</strong></li>
-                  <li><i class="icofont-rounded-right"></i>Website <strong><a href="https://slord2k2.netlify.app/">here</a></strong></li>
-                  <li><i class="icofont-rounded-right"></i>Phone <strong>+91 9465286501</strong></li>
+                  <li><i class="icofont-rounded-right"></i>Website <strong><a href="https://slord2k2.netlify.app/" target="_blank">here</a></strong></li>
+                  <li><i class="icofont-rounded-right"></i>Phone <strong><a href="tel:+919465286501">+91 9465286501</a></strong></li>
                   <li><i class="icofont-rounded-right"></i>City <strong>Gurgaon,HR</strong></li>
                 </ul>
               </div>
@@ -103,7 +103,8 @@
                 <ul>
                   <li><i class="icofont-rounded-right"></i>Age: <strong id="age"></strong></li>
                   <li><i class="icofont-rounded-right"></i>Degree <strong>B.TECH</strong></li>
-                  <li><i class="icofont-rounded-right"></i>Email <strong>harshkishor2002@gmail.com</strong></li>
+                  <li><i class="icofont-rounded-right"></i>Email <strong><a href="mailto:harshkishor2002@gmail.com">harshkishor2002@gmail.com</a></strong></li>
+                  <li><i class="icofont-rounded-right"></i><strong><a href="https://drive.google.com/file/d/1HsL6R4-dGMWgmTymZMUnVTGoSW6Kynm6/view?usp=share_link" target="_blank">RESUME</a></strong></li>
                 </ul>
               </div>
             </div>
@@ -268,7 +269,7 @@
             <h4>XII</h4>
             <h5>2019</h5>
             <p><em>Kendriya Vidyalaya No.1 ,Halwara</em></p>
-            <p>AISSE</p>
+            <p>AISSCE</p>
           </div>
         </div>
         
@@ -287,19 +288,19 @@
         <div class="col-lg-5 d-flex align-items-streach">
           <div class="info">
             <div class="address">
-              <i class="icofont-google-map"></i>
+              <a href="https://goo.gl/maps/nr8ks4evVPnNH5iz6" target="_blank"><i class="icofont-google-map"></i></a>
               <h4>Location</h4>
               <p>Gurgaon HR 122001</p>
             </div>
 
             <div class="email">
-              <i class="icofont-envelope"></i>
+              <a href="mailto:harshkishor2003@gmail.com"><i class="icofont-envelope"></i></a>
               <h4>Email:</h4>
               <p>harshkishor2003@gmail.com</p>
             </div>
 
             <div class="phone">
-              <i class="icofont-phone"></i>
+              <a href="tel:+919465286501"><i class="icofont-phone"></i></a>
               <h4>Call:</h4>
               <p>+91 9465286501</p>
             </div>
@@ -313,40 +314,40 @@
    
         
         <!-- <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-tems-stretch">
-          <form action="/" method="post" role="form" class="php-email-form">
-            <div class="form-row">
-              <div class="form-group col-md-6">
-                <label for="name">Your Name</label>
-                <input type="text" name="name" class="form-control" id="name" data-rule="minlin:4" data-msg="Please enter at least 4 chars">
-                <div class="validate"></div>
-              </div>
-              <div class="form-group col-md-6">
-                <label for="name">Your Email</label>
-                <input type="email" class="form-control" name="email" id="email" data-rule="email" data-msg="Please enter a valid email" />
-                <div class="validate"></div>
-              </div>
-            </div>
-            <div class="form-group">
-              <label for="name"> Subject</label>
-              <input type="text" class="form-control" id="subject"  data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject">
-              <div class="validate"></div>
-            </div>
-            <div class="form-group">
-              <label for="name">Message</label>
-              <textarea class="form-control" name="message" rows="10" data-rule="required" data-msg="Please write something for us"></textarea>
-              <div class="validate"></div>
-            </div>
-            <div class="mb-3">
-              <div class="loading">Loading</div>
-              <div class="error-message"></div>
-              <div class="sent-message">Your message has been sent. Thank you!</div>
-            </div>
-            <div class="text-center">
-              <button type="submit">Send Message</button>
-            </div>
-          
-          </form>
-        </div> -->
+  <form action="/send" method="POST" role="form" class="php-email-form">
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="name">Your Name</label>
+        <input type="text" name="name" class="form-control" id="name" data-rule="minlin:4" data-msg="Please enter at least 4 chars">
+        <div class="validate"></div>
+      </div>
+      <div class="form-group col-md-6">
+        <label for="email">Your Email</label>
+        <input type="email" class="form-control" name="email" id="email" data-rule="email" data-msg="Please enter a valid email" />
+        <div class="validate"></div>
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="subject">Subject</label>
+      <input type="text" class="form-control" name="subject" id="subject"  data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject">
+      <div class="validate"></div>
+    </div>
+    <div class="form-group">
+      <label for="message">Message</label>
+      <textarea class="form-control" name="message" id="message" rows="10" data-rule="required" data-msg="Please write something for us"></textarea>
+      <div class="validate"></div>
+    </div>
+    <div class="mb-3">
+      <div class="loading">Loading</div>
+      <div class="error-message"></div>
+      <div class="sent-message">Your message has been sent. Thank you!</div>
+    </div>
+    <div class="text-center">
+      <button type="submit">Send Message</button>
+    </div>
+  </form>
+</div>
+ -->
 
       </div>
     </div>
